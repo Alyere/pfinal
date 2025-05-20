@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static/css/estilo.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sobre Mim</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Sobre Mim</a></li>
+                <li><a href="/templates/complexidade.html">Complexidade</a></li>
+                <li><a href="/templates/dicas.html">Dicas</a></li>
+                <li><a href="/templates/ferramentas.html">Ferramentas</a></li>
+                <li><a href="/templates/mitos.html">Mitos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="foto">
+            <img src="{{ url_for('static', filename='img/foto.jpg') }}" alt="Minha Foto">
+        </section>
+
+        <section class="descricao">
+            <p>Esta é a história de alguém que decidiu enfrentar um mundo cheio de códigos, conceitos estranhos e mudanças rápidas — com vontade de aprender, errar e evoluir. Talvez seja parecida com a sua.</p>
+        </section>
+
+        <section class="perfil">
+            <div class="card">
+                <h2>Perfil Técnico</h2>
+                <p>🧠 <strong>Área de estudo:</strong> Tecnologias da Informação</p>
+                <p>💡 <strong>Interesse atual:</strong> Desenvolvimento Web e Lógica de Programação</p>
+                <p>🛠️ <strong>Ferramentas estudadas:</strong> HTML, CSS, Git, VS Code</p>
+                <p>📚 <strong>Aprendizados recentes:</strong> Estrutura de páginas HTML, estilização básica com CSS, princípios da lógica de programação</p>
+                <p>🎯 <strong>Objetivo:</strong> Aprender a desenvolver sites e entender a base da programação para crescer na área de TI</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/static/css/estilo.css') }}"></script>
+</body>
+</html>
